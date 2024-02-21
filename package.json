@@ -7,7 +7,6 @@
     "vite:dev": "npm run dev -w vite",
     "vite:build": "npm run build -w vite",
     "fix": "biome check --apply .",
-    "postinstall": "lefthook install",
     "orval": "orval --config ./orval.config.js"
   },
   "workspaces": ["packages/*"],
