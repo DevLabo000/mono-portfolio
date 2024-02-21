@@ -4,12 +4,14 @@
   "description": "",
   "private": true,
   "scripts": {
-    "fix": "biome check --apply ./packages/**/*.*"
+    "fix": "biome check --apply ./packages/**/*.*",
+    "postinstall": "lefthook install"
   },
   "author": "",
   "license": "ISC",
   "workspaces": ["packages/*"],
   "devDependencies": {
-    "@biomejs/biome": "1.5.3"
+    "@biomejs/biome": "1.5.3",
+    "lefthook": "^1.6.1"
   }
 }
