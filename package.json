@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "fix": "biome check --apply ./packages/**/*.*",
+    "fix": "biome check --apply .",
     "postinstall": "lefthook install"
   },
   "author": "",
