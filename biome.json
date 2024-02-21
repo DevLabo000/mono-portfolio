@@ -5,6 +5,7 @@
   },
   "linter": {
     "enabled": true,
+    "ignore": ["./packages/libs/**/*"],
     "rules": {
       "recommended": true,
       "correctness": {

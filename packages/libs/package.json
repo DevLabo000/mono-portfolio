@@ -2,11 +2,8 @@
   "name": "libs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@tanstack/react-query": "^5.22.2",
+    "axios": "^1.6.7"
+  }
 }

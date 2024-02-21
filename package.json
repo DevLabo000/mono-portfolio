@@ -4,14 +4,19 @@
   "description": "",
   "private": true,
   "scripts": {
+    "vite:dev": "npm run dev -w vite",
     "fix": "biome check --apply .",
-    "postinstall": "lefthook install"
+    "postinstall": "lefthook install",
+    "orval": "orval --config ./orval.config.js"
   },
-  "author": "",
-  "license": "ISC",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
-    "lefthook": "^1.6.1"
+    "@faker-js/faker": "^8.4.1",
+    "lefthook": "^1.6.1",
+    "msw": "^2.2.1",
+    "orval": "^6.25.0"
   }
 }

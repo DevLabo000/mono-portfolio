@@ -30,5 +30,10 @@
     "editor.codeActionsOnSave": {
       "quickfix.biome": true
     }
+  },
+  "[javascript][json][jsonc][jsx-tags][typescript]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit"
+    }
   }
 }
