@@ -6,7 +6,7 @@ export function MswProvider({ children }: { children: React.ReactNode }) {
   const [shouldRender, setShouldRender] = useState(!mockingEnabled);
 
   useEffect(() => {
-    if (import.meta.env.VITE_API_MOCKING === 'enabled') {
+    if (import.meta.env.DEV && import.meta.env.VITE_API_MOCKING === 'enabled') {
       import('@/mock').then(async ({ initMocks }) => {
         await initMocks();
         setShouldRender(true);
